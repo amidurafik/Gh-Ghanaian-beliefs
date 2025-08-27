@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islam in Ghana - Ghanaian Religious Heritage</title>
+    <link rel="icon" type="image/svg+xml" 
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' 
+    viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%235D5CDE'/%3E%3Ctext x='32' 
+    y='40' text-anchor='middle' font-size='20' fill='white' font-family='Arial'%3EGRH%3C/text%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="islamic.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        ghana: {
+                            red: '#CE1126',
+                            gold: '#FCD116',
+                            green: '#006B3F'
+                        },
+                        islamic: {
+                            primary: '#008080',
+                            secondary: '#20B2AA',
+                            accent: '#00CED1'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <!-- Navigation -->
+    <nav class="bg-islamic-primary shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-lg sm:text-xl font-bold text-white">🇬🇭 Ghanaian Religious Heritage</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-ghana-gold transition-colors">Home</a>
+                    <a href="islam.html" class="text-ghana-gold font-semibold">Islam</a>
+                    <a href="christianity.html" class="text-white hover:text-ghana-gold transition-colors">Christianity</a>
+                    <a href="traditional.html" class="text-white hover:text-ghana-gold transition-colors">Traditional</a>
+                    <a href="index.html#advisors" class="text-white hover:text-ghana-gold transition-colors">Advisors</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="Islamic py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                ☪️ Islam in Ghana
+            </h1>
+            <p class="text-xl text-white opacity-90 max-w-3xl mx-auto">
+                Exploring the rich Islamic heritage and traditions that have shaped Ghana's spiritual landscape for centuries
+            </p>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-islamic-primary">Historical Arrival</h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                        
+
+                        The introduction of Islam into Ghana dates back to the trans-Saharan trade routes, 
+                        where Muslim traders and scholars played a pivotal role in the spread of Islamic beliefs.
+                         As early as the 9th century, Islam began to make its mark in the Ghana Empire, particularly in the trading centers of the Sahel region.
+                          The influence of Islam was initially concentrated among the ruling elite and merchant classes, who were attracted to the religion's
+                           teachings and its connection to the broader Islamic world.
+
+The spread of Islam brought significant changes to the sociopolitical structure of the region. Islamic education, art, and architecture began to 
+flourish, 
+particularly in cities like Timbuktu and Gao, which, though outside current Ghanaian borders, influenced the broader region. The establishment of 
+mosques and Quranic schools fostered literacy and learning, contributing to the cultural and intellectual development of the area. Over time, 
+Islam became widely practiced, blending with indigenous beliefs to create a unique religious and cultural synthesis.
+Despite the spread of Islam, many communities retained their traditional beliefs, leading to a religious duality that continues to characterize 
+Ghana's spiritual
+ landscape today. The coexistence of Islamic practices with indigenous beliefs highlights the adaptability and resilience of Ghanaian culture.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-islamic-primary pl-4">
+                            <h3 class="font-semibold text-lg">8th-15th Century</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Introduction through trade routes and scholarly exchange</p>
+                        </div>
+                        <div class="border-l-4 border-islamic-secondary pl-4">
+                            <h3 class="font-semibold text-lg">16th-18th Century</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Establishment of Islamic kingdoms and educational centers</p>
+                        </div>
+                        <div class="border-l-4 border-islamic-accent pl-4">
+                            <h3 class="font-semibold text-lg">Modern Era</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Integration with Ghanaian culture and interfaith harmony</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-islamic-primary">Key Statistics</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span>Muslim Population</span>
+                            <span class="font-bold text-islamic-primary">19.9%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Major Regions</span>
+                            <span class="font-bold">Northern Ghana</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Mosques</span>
+                            <span class="font-bold">2,000+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Islamic Schools</span>
+                            <span class="font-bold">500+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Beliefs Section -->
+    <section class="bg-islamic-primary py-16 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-islamic-primary">Core Islamic Beliefs & Practices</h2>
+            
+            <!-- Five Pillars -->
+            <div class=" grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class=" bg-islamic-primary bg-opacity-10 p-6 rounded-lg text-center">
+                    <div class="text-4xl mb-4">🕋</div>
+                    <h3 class="text-xl font-semibold mb-3">Shahada</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Declaration of faith in Allah and Prophet Muhammad (PBUH)</p>
+                </div>
+                
+                <div class="bg-islamic-secondary bg-opacity-10 p-6 rounded-lg text-center">
+                    <div class="text-4xl mb-4">🤲</div>
+                    <h3 class="text-xl font-semibold mb-3">Salah</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Five daily prayers performed facing Mecca</p>
+                </div>
+                
+                <div class="bg-islamic-accent bg-opacity-10 p-6 rounded-lg text-center">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="text-xl font-semibold mb-3">Zakat</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Obligatory charity for those who are able</p>
+                </div>
+                
+                <div class="bg-islamic-primary bg-opacity-10 p-6 rounded-lg text-center">
+                    <div class="text-4xl mb-4">🌙</div>
+                    <h3 class="text-xl font-semibold mb-3">Sawm</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Fasting during the holy month of Ramadan</p>
+                </div>
+                
+                <div class="bg-islamic-secondary bg-opacity-10 p-6 rounded-lg text-center">
+                    <div class="text-4xl mb-4">🕌</div>
+                    <h3 class="text-xl font-semibold mb-3">Hajj</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Pilgrimage to Mecca for those who are able</p>
+                </div>
+                
+                <div class="bg-islamic-accent bg-opacity-10 p-6 rounded-lg text-center">
+                    <div class="text-4xl mb-4">📖</div>
+                    <h3 class="text-xl font-semibold mb-3">Quran Study</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Daily recitation and study of the Holy Quran</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ghanaian Islamic Culture -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-islamic-primary">Islamic Culture in Ghana</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Festivals & Celebrations</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">Eid al-Fitr</h4>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                Celebration marking the end of Ramadan, featuring communal prayers, 
+                                feasting, and gift-giving with traditional Ghanaian foods.
+                            </p>
+                            <ul class="text-sm text-gray-500 dark:text-gray-400 list-disc list-inside">
+                                <li>Community gatherings at mosques</li>
+                                <li>Traditional foods like tuo zaafi and jollof rice</li>
+                                <li>Charity giving to the less fortunate</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">Eid al-Adha</h4>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                Festival of sacrifice commemorating Ibrahim's willingness to sacrifice 
+                                his son, featuring animal sacrifice and community sharing.
+                            </p>
+                            <ul class="text-sm text-gray-500 dark:text-gray-400 list-disc list-inside">
+                                <li>Ritual animal sacrifice</li>
+                                <li>Sharing meat with family and community</li>
+                                <li>Special prayers and sermons</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">Maulid (Prophet's Birthday)</h4>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                Celebration of Prophet Muhammad's birthday with recitations, 
+                                poetry, and community gatherings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Islamic Architecture</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">Sudano-Sahelian Style</h4>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                Traditional mosque architecture featuring mud-brick construction, 
+                                flat roofs, and distinctive wooden support beams.
+                            </p>
+                            <ul class="text-sm text-gray-500 dark:text-gray-400 list-disc list-inside">
+                                <li>Larabanga Mosque (15th century)</li>
+                                <li>Wa Central Mosque</li>
+                                <li>Tamale Central Mosque</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">Modern Islamic Centers</h4>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                Contemporary mosques combining traditional Islamic elements 
+                                with modern Ghanaian architectural styles.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">Educational Institutions</h4>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">
+                                Islamic schools and universities promoting both religious 
+                                and secular education in Ghana.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Mosques -->
+    <section class="py-16 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-islamic-primary">Historic Mosques of Ghana</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg text-center">
+                    <div class="text-3xl mb-4">🕌</div>
+                    <h3 class="font-semibold text-lg mb-2">Larabanga Mosque</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Built: 15th Century</p>
+                    <p class="text-sm">Oldest mosque in Ghana, UNESCO World Heritage site candidate</p>
+                </div>
+                
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg text-center">
+                    <div class="text-3xl mb-4">🕌</div>
+                    <h3 class="font-semibold text-lg mb-2">Central Mosque, Accra</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Built: 20th Century</p>
+                    <p class="text-sm">Largest mosque in Accra, modern Islamic architecture</p>
+                </div>
+                
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg text-center">
+                    <div class="text-3xl mb-4">🕌</div>
+                    <h3 class="font-semibold text-lg mb-2">Tamale Central Mosque</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Built: 20th Century</p>
+                    <p class="text-sm">Major Islamic center in Northern Ghana</p>
+                </div>
+                
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg text-center">
+                    <div class="text-3xl mb-4">🕌</div>
+                    <h3 class="font-semibold text-lg mb-2">Wa Central Mosque</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Built: 19th Century</p>
+                    <p class="text-sm">Traditional Sudano-Sahelian architecture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Advisor -->
+    <section class="py-16 bg-islamic-primary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Connect with Islamic Advisor</h2>
+            <p class="text-xl text-white opacity-90 mb-8">
+                Get guidance and answers to your questions about Islamic faith and practices in Ghana
+            </p>
+            <button id="contact-button" onclick="showAdvisorContact('Jawad', 'Islamic')" class="bg-islamic-primary text-white px-6 py-2 rounded-full hover:bg-islamic-secondary transition-colors">
+                        Contact Imam Jawad
+                    </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2024 Ghanaian Religious Heritage. Promoting Unity in Diversity. 🕊️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

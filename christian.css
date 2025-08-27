@@ -1,0 +1,16 @@
+.christian{
+    background: url('images/christian1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    padding: 5rem 0;
+
+}   
+
+
+.christian h1, .christian h2, .christian h3, .christian h4, .christian h5, .christian h6, .christian p {
+    color: rgb(236, 235, 235);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}

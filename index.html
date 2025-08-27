@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghanaian Religious Heritage - Islam, Christianity & Traditional Beliefs</title>
+    <link rel="icon" type="image/svg+xml" 
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' 
+    viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%235D5CDE'/%3E%3Ctext x='32' 
+    y='40' text-anchor='middle' font-size='20' fill='white' font-family='Arial'%3EGRH%3C/text%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        ghana: {
+                            red: '#CE1126',
+                            gold: '#FCD116',
+                            green: '#006B3F'
+                        },
+                        islamic: {
+                            primary: '#008080',
+                            secondary: '#20B2AA',
+                            accent: '#00CED1'
+                        },
+                        christian: {
+                            primary: '#8B4513',
+                            secondary: '#CD853F',
+                            accent: '#DEB887'
+                        },
+                        traditional: {
+                            primary: '#228B22',
+                            secondary: '#32CD32',
+                            accent: '#90EE90'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+</head>
+<body class="bg-ghana-green text-gray-900 dark:text-white transition-colors duration-300">
+   <!-- Navigation -->
+<nav class="bg-ghana-green shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo/Brand -->
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <h1 class="text-lg sm:text-xl font-bold text-white">🇬🇭 Ghanaian Religious Heritage</h1>
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-white hover:text-ghana-gold transition-colors duration-200">Home</a>
+                <a href="#islam" class="text-white hover:text-ghana-gold transition-colors duration-200">Islam</a>
+                <a href="#christianity" class="text-white hover:text-ghana-gold transition-colors duration-200">Christianity</a>
+                <a href="#traditional" class="text-white hover:text-ghana-gold transition-colors duration-200">Traditional</a>
+                <a href="#advisors" class="text-white hover:text-ghana-gold transition-colors duration-200">Advisors</a>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-ghana-gold hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-all duration-200" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Hamburger icon -->
+                    <svg id="menu-open-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!-- Close icon -->
+                    <svg id="menu-close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="md:hidden hidden overflow-hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 bg-ghana-green border-t border-ghana-gold border-opacity-20 shadow-lg">
+            <a href="#home" class="mobile-nav-link block px-4 py-3 rounded-md text-base font-medium text-white hover:text-ghana-gold hover:bg-green-800 active:bg-green-900 transition-all duration-200">
+                <span class="flex items-center">
+                    <span class="mr-3 text-lg">🏠</span>
+                    Home
+                </span>
+            </a>
+            <a href="#islam" class="mobile-nav-link block px-4 py-3 rounded-md text-base font-medium text-white hover:text-ghana-gold hover:bg-green-800 active:bg-green-900 transition-all duration-200">
+                <span class="flex items-center">
+                    <span class="mr-3 text-lg">☪️</span>
+                    Islam
+                </span>
+            </a>
+            <a href="#christianity" class="mobile-nav-link block px-4 py-3 rounded-md text-base font-medium text-white hover:text-ghana-gold hover:bg-green-800 active:bg-green-900 transition-all duration-200">
+                <span class="flex items-center">
+                    <span class="mr-3 text-lg">✝️</span>
+                    Christianity
+                </span>
+            </a>
+            <a href="#traditional" class="mobile-nav-link block px-4 py-3 rounded-md text-base font-medium text-white hover:text-ghana-gold hover:bg-green-800 active:bg-green-900 transition-all duration-200">
+                <span class="flex items-center">
+                    <span class="mr-3 text-lg">🌟</span>
+                    Traditional
+                </span>
+            </a>
+            <a href="#advisors" class="mobile-nav-link block px-4 py-3 rounded-md text-base font-medium text-white hover:text-ghana-gold hover:bg-green-800 active:bg-green-900 transition-all duration-200">
+                <span class="flex items-center">
+                    <span class="mr-3 text-lg">👥</span>
+                    Advisors
+                </span>
+            </a>
+        </div>
+    </div>
+</nav>
+<!-- Hero Section -->
+<section id="home" class="relative bg-gradient-to-r from-ghana-red via-ghana-gold to-ghana-green py-20 heritage-pattern">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+            Religious Harmony in Ghana
+        </h1>
+        <p class="text-xl md:text-2xl text-white mb-8 max-w-4xl mx-auto">
+            Discover the beautiful coexistence of Islam, Christianity, and Traditional beliefs that shape Ghana's spiritual landscape
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="islam.html" class="bg-islamic-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-islamic-secondary transition-colors">
+                ☪️ Explore Islam
+            </a>
+            <a href="christianity.html" class="bg-christian-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-christian-secondary transition-colors">
+                ✝️ Explore Christianity
+            </a>
+            <a href="traditional.html" class="bg-traditional-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-traditional-secondary transition-colors">
+                🌟 Traditional Beliefs
+            </a>
+        </div>
+    </div>
+</section>
+    <!-- Overview Section -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ghana's Religious Diversity</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Ghana is home to a remarkable blend of faiths that coexist peacefully, each contributing to the nation's rich spiritual heritage
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg">
+                    <img src="images/Muslims-in-Ghana.jpeg" alt="Muslims in Ghana" class="mx-auto mb-4 rounded-lg object-cover w-full h-40">
+                    <div class="text-4xl mb-4">☪️</div>
+                    <h3 class="text-xl font-semibold mb-3 text-islamic-primary">Islam in Ghana</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                        Approximately 19.9% of Ghanaians practice Islam, primarily in the northern regions, following Sunni traditions with rich cultural integration.
+                    </p>
+                    <div class="text-xs text-gray-500 dark:text-gray-400">
+                        Major Communities: Hausa, Dagomba, Gonja, Wala
+                    </div>
+                </div>
+                
+                <div class="text-center p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg">
+                    <img src="images/christian1.jpg" alt="Christianity in Ghana" class="mx-auto mb-4 rounded-lg object-cover w-full h-40">
+                    <div class="text-4xl mb-4">✝️</div>
+                    <h3 class="text-xl font-semibold mb-3 text-christian-primary">Christianity in Ghana</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                        About 71% of Ghanaians are Christians, with diverse denominations including Catholic, Methodist, Presbyterian, and Pentecostal churches.
+                    </p>
+                    <div class="text-xs text-gray-500 dark:text-gray-400">
+                        Major Denominations: Catholic, Methodist, Presbyterian, Pentecostal
+                    </div>
+                </div>
+                
+                <div class="text-center p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg">
+                    <img src="images/culture.jpg" alt="Traditional Ghanaian Beliefs" class="mx-auto mb-4 rounded-lg object-cover w-full h-40">
+                    <div class="text-4xl mb-4">🌟</div>
+                    <h3 class="text-xl font-semibold mb-3 text-traditional-primary">Traditional Beliefs</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                        Around 5% practice traditional religions, with many more incorporating traditional elements into their contemporary faith practices.
+                    </p>
+                    <div class="text-xs text-gray-500 dark:text-gray-400">
+                        Elements: Ancestral reverence, Nature worship, Community rituals
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Islam Section -->
+    <section id="islam" class="py-16 bg-white dark:bg-gray-900 islamic-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-islamic-primary">☪️ Islam in Ghana</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Islam arrived in Ghana through trans-Saharan trade routes, creating a unique blend of Islamic practices with local traditions
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-islamic-primary">Core Beliefs & Practices</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-islamic-primary text-white p-2 rounded-full flex-shrink-0">
+                                <span class="text-sm">🕌</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Five Pillars of Islam</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">Shahada (faith), Salah (prayer), Zakat (charity), Sawm (fasting), Hajj (pilgrimage)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-islamic-secondary text-white p-2 rounded-full flex-shrink-0">
+                                <span class="text-sm">📖</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Quranic Education</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">Strong tradition of Islamic schools (madrasas) and Quranic recitation in local languages</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-islamic-accent text-white p-2 rounded-full flex-shrink-0">
+                                <span class="text-sm">🤲</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Community Prayer</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">Friday congregational prayers and community gatherings strengthen social bonds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-islamic-primary">Ghanaian Islamic Traditions</h3>
+                    <div class="bg-islamic-primary bg-opacity-10 p-6 rounded-lg">
+                        <h4 class="font-semibold mb-3">Unique Practices</h4>
+                        <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+                            <li>• <strong>Ramadan Celebrations:</strong> Community iftar gatherings with traditional foods</li>
+                            <li>• <strong>Islamic Festivals:</strong> Eid celebrations blending Islamic and local customs</li>
+                            <li>• <strong>Traditional Architecture:</strong> Sudano-Sahelian mosque designs in northern Ghana</li>
+                            <li>• <strong>Multilingual Worship:</strong> Prayers in Arabic with local language explanations</li>
+                            <li>• <strong>Interfaith Harmony:</strong> Peaceful coexistence with other religious communities</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-6 bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
+                        <h4 class="font-semibold mb-3">Important Islamic Centers</h4>
+                        <div class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                            <p>• Central Mosque, Accra</p>
+                            <p>• Larabanga Mosque (15th century)</p>
+                            <p>• Tamale Central Mosque</p>
+                            <p>• Wa Central Mosque</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Christianity Section -->
+    <section id="christianity" class="py-16 bg-gray-50 dark:bg-gray-800 christian-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-christian-primary">✝️ Christianity in Ghana</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Christianity in Ghana reflects a vibrant tapestry of denominations, from historic missions to contemporary Pentecostal movements
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-christian-primary">Major Denominations</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-christian-primary pl-4">
+                            <h4 class="font-semibold">Catholic Church</h4>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">Established through Portuguese missionaries, emphasizing education and social services</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-christian-secondary pl-4">
+                            <h4 class="font-semibold">Methodist Church Ghana</h4>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">Founded by British missionaries, known for educational institutions and community development</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-christian-accent pl-4">
+                            <h4 class="font-semibold">Presbyterian Church</h4>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">Strong presence in Volta and Eastern regions, emphasis on local language worship</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-ghana-gold pl-4">
+                            <h4 class="font-semibold">Pentecostal Churches</h4>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">Rapidly growing movement emphasizing spiritual gifts, healing, and prosperity</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-christian-primary">Christian Practices in Ghana</h3>
+                    <div class="space-y-6">
+                        <div class="bg-christian-primary bg-opacity-10 p-6 rounded-lg">
+                            <h4 class="font-semibold mb-3">Worship Traditions</h4>
+                            <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+                                <li>• <strong>Local Language Services:</strong> Worship in Twi, Ga, Ewe, and other local languages</li>
+                                <li>• <strong>Traditional Music:</strong> Integration of indigenous rhythms and instruments</li>
+                                <li>• <strong>Community Festivals:</strong> Easter and Christmas celebrations with cultural elements</li>
+                                <li>• <strong>All-Night Services:</strong> Extended worship sessions and prayer vigils</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
+                            <h4 class="font-semibold mb-3">Social Impact</h4>
+                            <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+                                <li>• Establishment of schools and universities</li>
+                                <li>• Healthcare facilities and hospitals</li>
+                                <li>• Orphanages and social welfare programs</li>
+                                <li>• Community development initiatives</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traditional Beliefs Section -->
+    <section id="traditional" class="py-16 bg-white dark:bg-gray-900">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-traditional-primary">🌟 Traditional Ghanaian Beliefs</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    The indigenous spiritual traditions that form the foundation of Ghana's cultural identity and continue to influence modern practices
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-traditional-primary bg-opacity-10 p-6 rounded-lg border-l-4 border-traditional-primary">
+                    <h3 class="text-xl font-semibold mb-3 text-traditional-primary">Ancestral Worship</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        Reverence for deceased family members and community leaders who continue to guide and protect the living through spiritual intervention.
+                    </p>
+                </div>
+                
+                <div class="bg-traditional-secondary bg-opacity-10 p-6 rounded-lg border-l-4 border-traditional-secondary">
+                    <h3 class="text-xl font-semibold mb-3 text-traditional-secondary">Nature Spirituality</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        Sacred relationship with natural elements - rivers, trees, mountains, and animals are considered dwelling places of spirits.
+                    </p>
+                </div>
+                
+                <div class="bg-traditional-accent bg-opacity-10 p-6 rounded-lg border-l-4 border-traditional-accent">
+                    <h3 class="text-xl font-semibold mb-3 text-traditional-accent">Community Rituals</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        Ceremonial practices that mark life transitions, seasonal changes, and community events, strengthening social bonds.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-traditional-primary">Core Elements</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-traditional-primary text-white p-2 rounded-full flex-shrink-0">
+                                <span class="text-sm">🎭</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Fetish Priests & Priestesses</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">Spiritual intermediaries who communicate with deities and spirits on behalf of the community</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-traditional-secondary text-white p-2 rounded-full flex-shrink-0">
+                                <span class="text-sm">🥁</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Sacred Drums & Music</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">Rhythmic communication with the spirit world through traditional instruments and chants</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-traditional-accent text-white p-2 rounded-full flex-shrink-0">
+                                <span class="text-sm">🌿</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Herbal Medicine</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">Spiritual healing through indigenous plants and traditional medicinal practices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-traditional-primary">Adinkra Symbols</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <img src="images/OIP.webp" alt="Gye Nyame" class="mx-auto mb-2 w-10 h-10">
+                            <h5 class="font-semibold text-sm">Gye Nyame</h5>
+                            <p class="text-xs text-gray-600 dark:text-gray-400">"Except God"</p>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <img src="images/sankofa.webp" alt="Sankofa" class="mx-auto mb-2 w-10 h-10">
+                            <h5 class="font-semibold text-sm">Sankofa</h5>
+                            <p class="text-xs text-gray-600 dark:text-gray-400">Learn from past</p>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <img src="images/mk.jpg" alt="Nkyinkyim" class="mx-auto mb-2 w-10 h-10">
+                            <h5 class="font-semibold text-sm">Nkyinkyim</h5>
+                            <p class="text-xs text-gray-600 dark:text-gray-400">Versatility</p>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <img src="images/adow.jpg" alt="Adwo" class="mx-auto mb-2 w-10 h-10">
+                            <h5 class="font-semibold text-sm">Adwo</h5>
+                            <p class="text-xs text-gray-600 dark:text-gray-400">Peace</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+   
+    <!-- Religious Advisors Section -->
+    <section id="advisors" class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Religious & Spiritual Advisors</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Connect with knowledgeable advisors from each faith tradition for guidance, counseling, and spiritual direction
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+               
+                <!-- Islamic Advisor -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center border-t-4 border-islamic-primary">
+                    <img src="images/imam.jpg" alt="Imam Abdullah Yakubu" class="advisor-avatar w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-islamic-primary">
+                    <h3 class="text-xl font-semibold mb-2">Imam Jawad Al-Hassan</h3>
+                    <p class="text-islamic-primary font-medium mb-3">Islamic Scholar & Imam</p>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                        M.A. in Islamic Studies, 15+ years experience in religious counseling and interfaith dialogue. Fluent in Arabic, Twi, Hausa, and English.
+                    </p>
+                    <div class="space-y-2 text-sm mb-4">
+                        <p class="flex items-center justify-center">
+                            <span class="text-islamic-primary mr-2">📧</span>
+                            abduljawadalhassan4@gmail.com
+                        </p>
+                        <p class="flex items-center justify-center">
+                            <span class="text-islamic-primary mr-2">📱</span>
+                            0265587871
+                        </p>
+                        <p class="flex items-center justify-center">
+                            <span class="text-islamic-primary mr-2">🕌</span>
+                            Central Mosque, Kumasi
+                        </p>
+                    </div>
+                    <div class="bg-islamic-primary bg-opacity-10 p-3 rounded text-xs mb-4">
+                        <strong>Specialties:</strong> Quranic interpretation, Islamic law, Marriage counseling, Youth guidance
+                    </div>
+                    <button id="contact-button" onclick="showAdvisorContact('Jawad', 'Islamic')" class="bg-islamic-primary text-white px-6 py-2 rounded-full hover:bg-islamic-secondary transition-colors">
+                        Contact Imam Jawad
+                    </button>
+                </div>
+
+                <!-- Christian Advisor -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center border-t-4 border-christian-primary">
+                    <img src="images/pastor.jpg" alt="Pastor Mary Osei" class="advisor-avatar w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-christian-primary">
+                    <h3 class="text-xl font-semibold mb-2">Reverend Samuel Oduro</h3>
+                    <p class="text-christian-primary font-medium mb-3">Senior Pastor & Theologian</p>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                        Doctor of Theology, 20+ years in pastoral ministry. Experienced in family counseling, spiritual direction, and community outreach programs.
+                    </p>
+                    <div class="space-y-2 text-sm mb-4">
+                        <p class="flex items-center justify-center">
+                            <span class="text-christian-primary mr-2">📧</span>
+                            revsamueloduro@yahoo.com
+                        </p>
+                        <p class="flex items-center justify-center">
+                            <span class="text-christian-primary mr-2">📱</span>
+                            +233 26 234 5678
+                        </p>
+                        <p class="flex items-center justify-center">
+                            <span class="text-christian-primary mr-2">⛪</span>
+                           Pastor of Grace and Truth Tabernacle  International (GTTI)
+                        </p>
+                    </div>
+                    <div class="bg-christian-primary bg-opacity-10 p-3 rounded text-xs mb-4">
+                        <strong>Specialties:</strong> Biblical counseling, Family therapy, Men and Women's ministry, Grief counseling
+                    </div>
+                    <button id="contact-button" onclick="showAdvisorContact('samuel', 'Christian')" class="bg-christian-primary text-white px-6 py-2 rounded-full hover:bg-christian-secondary transition-colors">
+                        Contact Reverend Samuel Oduro
+                    </button>
+                </div>
+
+                <!-- Traditional Advisor -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center border-t-4 border-traditional-primary">
+                    <img src="images/asare.webp" alt="ISAAC ASARE-ABOAGYE" class="advisor-avatar w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-traditional-primary">
+                    <h3 class="text-xl font-semibold mb-2">ISAAC ASARE-ABOAGYE</h3>
+                    <p class="text-traditional-primary font-medium mb-3">Cultural Elder & Counselor</p>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                        Lecturer at the University of Energy and Natural Resources (UENR), 
+                        Sunyani in the Bono region of Ghana. He is in the department of Languages and General Studies, Schools of Management Studies and Law. He holds Master of Philosophy in Arts and Culture, Master of Arts in Arts and Culture, Bachelor of
+                         Education in Music all from the University of Education, Winneba, he worked with the Ghana Statistical Service in 2010 Population and Housing Census as a Field Officer.
+                    </p>
+                    <div class="space-y-2 text-sm mb-4">
+                        <p class="flex items-center justify-center">
+                            <span class="text-traditional-primary mr-2">📧</span>
+                            isaac.asare-aboagye@uenr.edu.gh
+                        </p>
+                        <p class="flex items-center justify-center">
+                            <span class="text-traditional-primary mr-2">📱</span>
+                            020 – 6638205
+                        </p>
+                        <p class="flex items-center justify-center">
+                            <span class="text-traditional-primary mr-2">🏛️</span>
+                            Sunyani Tradition
+                        </p>
+                    </div>
+                    <div class="bg-traditional-primary bg-opacity-10 p-3 rounded text-xs mb-4">
+                        <strong>Specialties:</strong> Ancestral guidance, Traditional healing, Cultural ceremonies, Spiritual cleansing
+                    </div>
+                    <button id="contact-button" onclick="showAdvisorContact('asare', 'Traditional')" class="bg-traditional-primary text-white px-6 py-2 rounded-full hover:bg-traditional-secondary transition-colors">
+                        Contact Asare Aboagye
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interfaith Dialogue Center -->
+            <div class="mt-12 bg-gradient-to-r from-islamic-primary via-christian-primary to-traditional-primary text-white p-8 rounded-lg text-center">
+                <h3 class="text-2xl font-semibold mb-4">🤝 Ghana Interfaith Dialogue Center</h3>
+                <p class="mb-6 max-w-3xl mx-auto">
+                    Promoting religious harmony, understanding, and cooperation among all faith communities in Ghana through dialogue, education, and joint social action.
+                </p>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div>
+                        <h4 class="font-semibold mb-2">☎️ Emergency Spiritual Support</h4>
+                        <p>+233 508742111 (24/7)</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-2">📧 General Inquiries</h4>
+                        <p>cristabelvirginia20@gmail.com</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-2">🏢 Main Office</h4>
+                        <p>Kumasi-Afrancho, Offinso Road</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">🇬🇭 Religious Heritage</h3>
+                    <p class="text-gray-300 text-sm">
+                        Celebrating Ghana's diverse religious landscape and promoting understanding among all faith communities.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Faith Traditions</h4>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li><a href="#islam" class="hover:text-islamic-primary">Islam in Ghana</a></li>
+                        <li><a href="#christianity" class="hover:text-christian-primary">Christianity</a></li>
+                        <li><a href="#traditional" class="hover:text-traditional-primary">Traditional Beliefs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li><a href="#advisors" class="hover:text-ghana-gold">Spiritual s</a></li>
+                        <li><a href="#" class="hover:text-ghana-gold">Prayer Times</a></li>
+                        <li><a href="#" class="hover:text-ghana-gold">Religious Calendar</a></li>
+                        <li><a href="#" class="hover:text-ghana-gold">Sacred Texts</a></li>
+                    </ul>
+
+
+
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <span class="text-ghana-gold">📘</span>
+                        <span class="text-ghana-gold">📷</span>
+                        <span class="text-ghana-gold">🐦</span>
+                        <span class="text-ghana-gold">📺</span>
+                    </div>
+                    <p class="text-gray-400 text-xs">Follow us for daily inspiration and interfaith dialogue</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Ghanaian Religious Heritage. Unity in Diversity. 🕊️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+   
+
+</html>
