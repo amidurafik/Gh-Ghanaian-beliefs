@@ -1,0 +1,70 @@
+/* Mobile menu animations */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 300px;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 300px;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+        max-height: 0;
+    }
+}
+
+.mobile-menu-enter {
+    animation: slideDown 0.3s ease-out forwards;
+}
+
+.mobile-menu-exit {
+    animation: slideUp 0.3s ease-in forwards;
+}
+
+/* Touch feedback for mobile links */
+.mobile-nav-link:active {
+    background-color: rgba(252, 209, 22, 0.2) !important;
+    transform: scale(0.98);
+}
+
+/* Responsive text sizing */
+@media (max-width: 640px) {
+    .nav-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-title {
+        font-size: 0.9rem;
+    }
+}
+
+/* Overlay for mobile menu */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-menu-overlay.show {
+    opacity: 1;
+}

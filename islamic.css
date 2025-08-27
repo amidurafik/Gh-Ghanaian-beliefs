@@ -1,0 +1,15 @@
+.Islamic {
+    background: url('images/masjid-al-haram.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(26, 24, 24, 0.6);
+    background-blend-mode: overlay;
+    padding: 5rem 0;
+}   
+.Islamic h1, .Islamic h2, .Islamic h3, .Islamic h4, .Islamic h5, .Islamic h6, .Islamic p {
+    color: rgb(236, 235, 235);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+

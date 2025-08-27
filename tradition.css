@@ -1,0 +1,16 @@
+.tradition{
+    background: url('images/libation.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    padding: 5rem 0;
+
+}   
+
+
+.traditon1, .traditon h2, .traditon h3, .traditon h4, .traditon h5, .traditon h6, .traditon p {
+    color: rgb(236, 235, 235);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
